@@ -10,4 +10,6 @@ def sleeper(n, name):
 t = threading.Thread(target=sleeper, args=(5, 'sepdie'))
 
 t.start()
+t.join() # Blocking method 
+
 print('hello')
